@@ -1,4 +1,4 @@
-namespace SetupProject
+﻿namespace Models
 {
     public class WeatherForecast
     {
