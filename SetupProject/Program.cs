@@ -11,7 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //To inject the Db connection for employee Db from app settings.
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeConnection")));
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeConnection")));
 
 var app = builder.Build();
 
